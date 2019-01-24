@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skills Inventory Update</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts2.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h2>Skills Inventory</h2>
+    </div>
+    <form id="skills-inventor">
+        <table id="outer_t">
+            <tr>
+        <div class="form-group">
+
+            <table id="skills">
+                <tbody>
+                <tr>
+                    <th>
+
+                    </th>
+                    <th>
+                        Skill
+                    </th>
+                    <th>
+                        How many years
+                    </th>
+                    <th>
+                        Year Last Time Used
+                    </th>
+                    <th>
+                        Skill Level
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="skills-checkbox"></td>
+                    <td><a href="#">Java</a></td>
+                    <td><input class="text-box" type="text"  name="duration" placeholder="years"></td>
+                    <td><input class="text-box2" type="text"  name="duration" placeholder="YYYY"></td>
+                    <td><select>
+                        <option value="">Select</option>
+                        <option value="Expert">Expert</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Intermidiate">Intermidiate</option>
+                        <option value="Novice">Novice</option>
+                    </select>
+
+                    </td>
+                    <td>
+                        <input class="radio-box" type="radio" name="act" value="Add" checked> Add
+                        <input class="radio-box" type="radio" name="act"  value="Update"> Update
+                        <input class="radio-box" type="radio" name="act"   value="Delete"> Delete
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="skills-checkbox"></td>
+                    <td><a href="#">C++</a></td>
+                    <td><input class="text-box" type="text"  name="duration" placeholder="years"></td>
+                    <td><input class="text-box2" type="text"  name="duration" placeholder="YYYY"></td>
+                    <td><select >
+                        <option value="">Select</option>
+                        <option value="Expert">Expert</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Intermidiate">Intermidiate</option>
+                        <option value="Novice">Novice</option>
+                    </select>
+                    </td>
+                    <td>
+                        <input class="radio-box" type="radio" name="act2"  value="Add" checked> Add
+                        <input class="radio-box" type="radio" name="act2"   value="Update"> Update
+                        <input class="radio-box" type="radio" name="act2"  value="Delete"> Delete
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="skills-checkbox"></td>
+                    <td><a href="#">JavaScript</a></td>
+                    <td><input class="text-box" type="text"  name="duration" placeholder="years"></td>
+                    <td><input class="text-box2" type="text"  name="duration" placeholder="YYYY"></td>
+                    <td><select >
+                        <option value="">Select</option>
+                        <option value="Expert">Expert</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Intermidiate">Intermidiate</option>
+                        <option value="Novice">Novice</option>
+                    </select>
+                    </td>
+                    <td>
+                        <input class="radio-box" type="radio" name="act3"   value="Add" checked> Add
+                        <input class="radio-box" type="radio" name="act3"   value="Update"> Update
+                        <input class="radio-box" type="radio" name="act3"   value="Delete"> Delete
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+            </tr>
+            <tr >
+                <div class="center">
+                <td><input type="submit" id="submi" value="Submit"></td>
+            </div>
+            </tr>
+        </table>
+    </form>
+    <span id="skills-responses">
+        <p><b>The following skills will be added to your skills inventory:</b></p>
+      </span>
+</div>
+</body>
+</html>

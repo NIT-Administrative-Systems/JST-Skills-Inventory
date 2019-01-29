@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Skills Inventory Update</title>
+    <title>Skills Inventory Search</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/stylesSearch.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/headerFooter.css" rel="stylesheet" type="text/css">
     <link href="css/multiple-select.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
@@ -11,12 +12,19 @@
     <script src="js/skillsSearch.js"></script>
 </head>
 <body>
+<script>
+    $(function(){
+        $("#header").load("_header.html");
+        $("#footer").load("_footer.html");
+    });
+</script>
+<div id="header"></div>
 <div class="container">
     <div class="jumbotron">
         <h2>Skills Inventory Search</h2>
     </div>
     <form id="skills-inventor">
-        <table>
+        <table id="outer_t">
             <tr>
         <div class="form-group">
 
@@ -42,7 +50,7 @@
                     <td><select multiple="multiple">
 
                         <option value="Expert">Expert</option>
-			<option value="Advanced">Advanced</option>
+                        <option value="Advanced">Advanced</option>
                         <option value="Intermidiate">Intermidiate</option>
                         <option value="Novice">Novice</option>
                     </select>
@@ -57,7 +65,7 @@
                     <td><select multiple="multiple">
 
                         <option value="Expert">Expert</option>
-			<option value="Advanced">Advanced</option>
+                        <option value="Advanced">Advanced</option>
                         <option value="Intermidiate">Intermidiate</option>
                         <option value="Novice">Novice</option>
                     </select>
@@ -71,7 +79,7 @@
                     <td><select multiple="multiple">
 
                         <option value="Expert">Expert</option>
-			<option value="Advanced">Advanced</option>
+                        <option value="Advanced">Advanced</option>
                         <option value="Intermidiate">Intermidiate</option>
                         <option value="Novice">Novice</option>
                     </select>
@@ -93,5 +101,6 @@
         <p><b>The following skills will be added to your skills inventory:</b></p>
       </span>
 </div>
+<div id="footer"></div>
 </body>
 </html>

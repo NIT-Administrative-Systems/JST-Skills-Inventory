@@ -4,14 +4,13 @@
 
 h2 {
     text-align: center;
-    text-transform: uppercase;
     width: 100%;
-    color: #4CAF50;
+    color: #5a0a85;
 }
 input[type=submit] {
-    width: 100px;
+    width: 150px;
     height: 50px;
-    background-color: #4CAF50;
+    background-color: #4E2A84;
     font-size: 16px;
     color: white;
     display: block;
@@ -22,12 +21,16 @@ input[type=submit] {
     /*cursor: pointer;*/
 }
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #4E2A84;
+    opacity:0.8;
 }
 #skills {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+}
+p.addSkill{
+    font-weight: 900;
 }
 #skills td:first-child, #skills th:first-child {
     width: 5%;
@@ -66,7 +69,7 @@ input[type=submit]:hover {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    background-color: #4CAF50;
+    background-color: #4E2A84;
     color: white;
 }
 .center {
@@ -79,3 +82,23 @@ select {
     font-size: 15px;
     width: 150px;
 }
+.developer_table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.developer_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4E2A84;
+    color: white;
+}
+.developer_table td, .developer_table th {
+    width: 15%;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.developer_table tr:nth-child(odd){background-color: #f2f2f2;}
+
+.developer_table tr:hover {background-color: #ddd;}

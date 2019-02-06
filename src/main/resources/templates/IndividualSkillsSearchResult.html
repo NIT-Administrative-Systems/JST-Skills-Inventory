@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skills Inventory Update</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/headerFooter.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts2.js"></script>
+</head>
+<body>
+<script>
+    $(function(){
+        $("#header").load("_header.html");
+        $("#footer").load("_footer.html");
+    });
+</script>
+<div id="header"></div>
+<div class="container">
+
+    <form id="skills-inventor">
+        <table id="outer_t">
+                
+            <tr>
+        <div class="form-group">
+
+            <table class="developer_table">
+                <tr>
+                    <div class="jumbotron">
+                        <h2>Marusya's skills</h2>
+                  
+                    </div>
+                     <div class="button-container">
+    <input type="submit" class = "button-sign" value="Download resume">
+</div>
+                </tr>
+
+                <tr>
+                    <th>
+                        Skill
+                    </th>
+                    <th>
+                        Skill Level
+                    </th>
+                    <th>
+                        How many years
+                    </th>
+                    <th>
+                        Year Last Time Used
+                    </th>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Advanced</td>
+                    <td>10</td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Intermidiate</td>
+                    <td>5</td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <td>UNIX</td>
+                    <td>Intermidiate</td>
+                    <td>15</td>
+                    <td>2019</td>
+                </tr>
+            </table>
+
+        </div>
+            </tr>
+        </table>
+    </form>
+    <span id="skills-responses">
+        <p><b>Email will be sent to the following recipients:</b></p>
+      </span>
+</div>
+<div id="footer"></div>
+</body>
+</html>

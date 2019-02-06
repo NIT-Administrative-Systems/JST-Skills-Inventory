@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Skinvent Search Result</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/styles.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/headerFooter.css}"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts2.js"></script>
+    <script th:src="@{/js/scripts2.js}"></script>
+</head>
+<body>
+
+<th:block th:include="/_header"></th:block>
+<div class="container">
+    <div class="jumbotron">
+        <h2>Skills Search Result</h2>
+    </div>
+    <form id="skills-inventor">
+        <table id="outer_t">
+            <tr>
+       
+<table>
+    <tr th:each="userSkill : ${userSkills}">
+        <h2 class='regular' th:utext="${userSkill.key}">...</h2>
+     <table class="developer_table">
+        
+                <tr>
+                    <th>
+                        Developer Name
+                    </th>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Skill Level
+                    </th>
+                     <th>
+                        How many Years
+                    </th>
+                    <th>
+                        Year Last Time Used
+                    </th>
+                </tr>
+            <tr th:each="userSkillDetail : ${userSkill.value}">         
+               <td><a th:href="@{'/individualSkillsSearchResult/' + ${userSkillDetail.id}}"><h th:utext="${userSkillDetail.users.firstName}"></h></a></td>
+               <td th:utext="${userSkillDetail.role.roleName}">...</td>
+               <td th:utext="${userSkillDetail.skillLevel.skillLevel}">...</td>
+               <td th:utext="${userSkillDetail.yearsSkillUsed}">...</td>
+               <td th:utext="${userSkillDetail.skillLastTimeUsed}">...</td>
+                
+            </tr>
+        </table>
+    </tr>
+</table>
+        </div>
+            </tr>
+            <tr >
+                <div class="center">
+                    <td><input type="submit" id="back" value="Back to search"></td>
+                </div>
+            </tr>
+        </table>
+    </form>
+<!--     <span id="skills-responses"> -->
+<!--         <p><b>Email will be sent to the following recipients:</b></p> -->
+<!--       </span> -->
+</div>
+<th:block th:include="/_footer"></th:block>
+</body>
+</html>
